@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Данные документа</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доступ к документам EasyDocs</title>
+
+    <!-- Самодостаточные стили, без внешних /Scripts/*.css -->
     <style>
         body {
             font-family: Arial, "Segoe UI", sans-serif;
@@ -10,92 +14,97 @@
             margin: 20px;
         }
 
-        h1 {
+        h2 {
             font-size: 20px;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
-        table.meta {
+        h3 {
+            margin-top: 18px;
+            margin-bottom: 6px;
+        }
+
+        table {
             border-collapse: collapse;
             margin-bottom: 16px;
         }
 
-        table.meta td {
-            padding: 2px 4px;
+        table td {
+            padding: 2px 6px;
             vertical-align: top;
         }
 
-        table.meta td.label {
+        table td:first-child {
             font-weight: bold;
-            padding-right: 8px;
+            padding-right: 12px;
         }
 
-        table.meta td.value {
-            background: #e5e5e5;
-            min-width: 260px;
+        #links {
+            margin-top: 10px;
         }
 
-        .section-title {
-            font-weight: bold;
-            margin-top: 16px;
+        #linkList {
+            margin-top: 8px;
+        }
+
+        #linkList li {
             margin-bottom: 4px;
         }
 
-        .attention {
-            color: #b00000;
-            font-style: italic;
-            margin-top: 4px;
-            margin-bottom: 8px;
+        #linkList a {
+            color: #0000ee;
+            text-decoration: underline;
         }
 
-        .files a {
-            display: block;
-            margin-bottom: 4px;
+        #linkList a:hover {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+    <h2>Данные документа</h2>
 
-<h1>Данные документа</h1>
+    <table>
+        <tr>
+            <td>Тема</td>
+            <td>Новое проектирование и строительство объектов газоснабжения</td>
+        </tr>
+        <tr>
+            <td>Номер</td>
+            <td>01-гор-2025-000001002</td>
+        </tr>
+        <tr>
+            <td>Рег. дата</td>
+            <td>21.07.2025 15:13:00</td>
+        </tr>
+        <tr>
+            <td>Вложения</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Статус</td>
+            <td>Завершен</td>
+        </tr>
+    </table>
 
-<table class="meta">
-    <tr>
-        <td class="label">Тема</td>
-        <td class="value">Новое проектирование и строительство объектов газоснабжения</td>
-    </tr>
-    <tr>
-        <td class="label">Номер</td>
-        <td class="value">01-гор-2025-000001002</td>
-    </tr>
-    <tr>
-        <td class="label">Рег. дата</td>
-        <td class="value">21.07.2025 15:13:00</td>
-    </tr>
-    <tr>
-        <td class="label">Вложения</td>
-        <td class="value">2</td>
-    </tr>
-    <tr>
-        <td class="label">Статус</td>
-        <td class="value">Завершен</td>
-    </tr>
-</table>
+    <h3>Доступ к приложениям документа</h3>
 
-<div class="section-title">Доступ к приложениям документа</div>
-<div class="section-title">Доступные Вам файлы для документа</div>
+    <div id="links">
+        <h3>Доступные Вам файлы для документа</h3>
+        <i>Внимание</i>: ссылки доступны в течение 2 часов.
 
-<div class="attention">
-    Внимание: ссылки доступны в течение 2 часов.
-</div>
-
-<div class="files">
-    <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf" download>
-        ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
-    </a>
-    <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms" download>
-        ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
-    </a>
-</div>
-
+        <ul id="linkList">
+            <li>
+                <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf" download>
+                    ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
+                </a>
+            </li>
+            <li>
+                <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms" download>
+                    ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
