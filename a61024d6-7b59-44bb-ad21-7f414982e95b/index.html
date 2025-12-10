@@ -40,10 +40,20 @@
             margin-top: 8px;
             padding-left: 18px;
         }
-        .attachments li[contenteditable="true"] {
+        .attachments li {
+            margin-bottom: 4px;
+        }
+        .attachments a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        .attachments a:hover {
+            text-decoration: underline;
+        }
+        .attachments span[contenteditable="true"] {
             outline: 1px dashed transparent;
         }
-        .attachments li[contenteditable="true"]:focus {
+        .attachments span[contenteditable="true"]:focus {
             outline-color: #888;
         }
         .note {
@@ -94,16 +104,27 @@
     <div class="section-title" style="font-size: 16px; margin-top: 8px;">
         Доступные Вам файлы для документа
     </div>
+
     <ul class="attachments">
-        <li contenteditable="true">
-            ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
+        <li>
+            <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf" download>
+                <span contenteditable="true">
+                    ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
+                </span>
+            </a>
         </li>
-        <li contenteditable="true">
-            ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
+        <li>
+            <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms" download>
+                <span contenteditable="true">
+                    ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
+                </span>
+            </a>
         </li>
     </ul>
+
     <div class="note">
         Подсказка: редактируйте текст прямо в строках списка. Чтобы добавить ещё файл, нажмите Enter в последнем пункте.
+        Для новых файлов достаточно добавить ещё один пункт списка по аналогии и указать имя файла в атрибуте <code>href</code>.
     </div>
 
     <div class="actions">
