@@ -15,35 +15,35 @@
 
         h2 {
             font-size: 18px;
-            margin-bottom: 10px;
+            margin: 0 0 10px 0;
         }
 
         h3 {
             font-size: 14px;
-            margin-top: 14px;
-            margin-bottom: 6px;
+            margin: 14px 0 6px 0;
         }
 
         table {
             border-collapse: collapse;
-            margin-bottom: 16px;
+            border-spacing: 0;
+            margin: 0 0 16px 0;
         }
 
-        table td {
+        td {
             padding: 2px 4px;
             vertical-align: top;
         }
 
-        /* первый столбец — подписи полей */
-        table td:first-child {
+        .label {
             font-weight: bold;
             padding-right: 8px;
         }
 
-        /* второй столбец — серая полоса нужной ширины */
-        table td:nth-child(2) {
+        /* серая полоса фиксированной ширины */
+        .value-box {
             background: #e5e5e5;
-            width: 340px;
+            padding: 2px 4px;
+            width: 420px;   /* при желании можно подрегулировать */
         }
 
         .attention {
@@ -57,8 +57,6 @@
         #linkList li {
             margin-bottom: 3px;
         }
-
-        /* ссылки оставляем «браузерными» — синие с подчёркиванием */
     </style>
 </head>
 <body>
@@ -66,24 +64,44 @@
 
     <table>
         <tr>
-            <td>Тема</td>
-            <td>Новое проектирование и строительство объектов газоснабжения</td>
+            <td class="label">Тема</td>
+            <td>
+                <div class="value-box">
+                    Новое проектирование и строительство объектов газоснабжения
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Номер</td>
-            <td>01-гор-2025-000001002</td>
+            <td class="label">Номер</td>
+            <td>
+                <div class="value-box">
+                    01-гор-2025-000001002
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Рег. дата</td>
-            <td>21.07.2025 15:13:00</td>
+            <td class="label">Рег. дата</td>
+            <td>
+                <div class="value-box">
+                    21.07.2025 15:13:00
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Вложения</td>
-            <td>2</td>
+            <td class="label">Вложения</td>
+            <td>
+                <div class="value-box">
+                    2
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>Статус</td>
-            <td>Завершен</td>
+            <td class="label">Статус</td>
+            <td>
+                <div class="value-box">
+                    Завершен
+                </div>
+            </td>
         </tr>
     </table>
 
