@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Доступ к документам EasyDocs</title>
 
-    <!-- Самодостаточные стили, без внешних /Scripts/*.css -->
     <style>
         body {
-            font-family: Arial, "Segoe UI", sans-serif;
-            font-size: 14px;
+            font-family: "Times New Roman", serif;
+            font-size: 12px;
             margin: 20px;
         }
 
         h2 {
-            font-size: 20px;
-            margin-bottom: 12px;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         h3 {
-            margin-top: 18px;
+            font-size: 14px;
+            margin-top: 14px;
             margin-bottom: 6px;
         }
 
@@ -30,35 +30,35 @@
         }
 
         table td {
-            padding: 2px 6px;
+            padding: 2px 4px;
             vertical-align: top;
         }
 
+        /* первый столбец — подписи полей */
         table td:first-child {
             font-weight: bold;
-            padding-right: 12px;
+            padding-right: 8px;
         }
 
-        #links {
-            margin-top: 10px;
+        /* второй столбец — серая полоса нужной ширины */
+        table td:nth-child(2) {
+            background: #e5e5e5;
+            width: 340px;
+        }
+
+        .attention {
+            color: #b00000;
         }
 
         #linkList {
-            margin-top: 8px;
+            margin-top: 6px;
         }
 
         #linkList li {
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
-        #linkList a {
-            color: #0000ee;
-            text-decoration: underline;
-        }
-
-        #linkList a:hover {
-            text-decoration: none;
-        }
+        /* ссылки оставляем «браузерными» — синие с подчёркиванием */
     </style>
 </head>
 <body>
@@ -91,7 +91,7 @@
 
     <div id="links">
         <h3>Доступные Вам файлы для документа</h3>
-        <i>Внимание</i>: ссылки доступны в течение 2 часов.
+        <span class="attention"><i>Внимание</i>:</span> ссылки доступны в течение 2 часов.
 
         <ul id="linkList">
             <li>
