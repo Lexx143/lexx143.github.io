@@ -2,31 +2,29 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Доступ к документам EasyDocs</title>
-
     <style>
         body {
-            font-family: "Times New Roman", serif;
-            font-size: 14px;          /* увеличили шрифт */
             margin: 20px;
+            font-family: "Times New Roman", serif;
+            font-size: 13px;
         }
 
         h2 {
+            margin: 0 0 12px 0;
             font-size: 20px;
-            margin: 0 0 10px 0;
+            font-weight: bold;
         }
 
         h3 {
-            font-size: 16px;
-            margin: 14px 0 6px 0;
+            margin: 16px 0 6px 0;
+            font-size: 15px;
+            font-weight: bold;
         }
 
         table {
             border-collapse: collapse;
-            border-spacing: 0;
-            margin: 0 0 16px 0;
+            margin-bottom: 18px;
         }
 
         td {
@@ -35,15 +33,16 @@
         }
 
         .label {
-            font-weight: bold;
-            padding-right: 8px;
+            padding-right: 10px;
+            font-weight: normal;
         }
 
-        /* серая полоса фиксированной ширины */
-        .value-box {
-            background: #e5e5e5;
+        /* серые прямоугольники только для нужных строк */
+        .value-gray {
+            background-color: #e5e5e5;
             padding: 2px 4px;
-            width: 420px;   /* при необходимости можно подправить */
+            min-width: 420px;   /* визуальная ширина серой полосы как на референсе */
+            display: inline-block;
         }
 
         .attention {
@@ -51,28 +50,25 @@
         }
 
         #linkList {
-            margin-top: 6px;
+            margin-top: 4px;
         }
 
         #linkList li {
-            margin-bottom: 3px;
-        }
-
-        a {
-            font-size: 14px;
+            margin: 1px 0;
         }
     </style>
 </head>
 <body>
+
     <h2>Данные документа</h2>
 
     <table>
         <tr>
             <td class="label">Тема</td>
             <td>
-                <div class="value-box">
+                <span class="value-gray">
                     Новое проектирование и строительство объектов газоснабжения
-                </div>
+                </span>
             </td>
         </tr>
         <tr>
@@ -84,9 +80,9 @@
         <tr>
             <td class="label">Рег. дата</td>
             <td>
-                <div class="value-box">
+                <span class="value-gray">
                     21.07.2025 15:13:00
-                </div>
+                </span>
             </td>
         </tr>
         <tr>
@@ -98,31 +94,30 @@
         <tr>
             <td class="label">Статус</td>
             <td>
-                <div class="value-box">
+                <span class="value-gray">
                     Завершен
-                </div>
+                </span>
             </td>
         </tr>
     </table>
 
     <h3>Доступ к приложениям документа</h3>
 
-    <div id="links">
-        <h3>Доступные Вам файлы для документа</h3>
-        <span class="attention"><i>Внимание</i>:</span> ссылки доступны в течение 2 часов.
+    <h3>Доступные Вам файлы для документа</h3>
+    <span class="attention"><i>Внимание</i>:</span> ссылки доступны в течении 2 часов.
 
-        <ul id="linkList">
-            <li>
-                <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf" download>
-                    ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
-                </a>
-            </li>
-            <li>
-                <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms" download>
-                    ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
-                </a>
-            </li>
-        </ul>
-    </div>
+    <ul id="linkList">
+        <li>
+            <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf" download>
+                ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
+            </a>
+        </li>
+        <li>
+            <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms" download>
+                ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
+            </a>
+        </li>
+    </ul>
+
 </body>
 </html>
