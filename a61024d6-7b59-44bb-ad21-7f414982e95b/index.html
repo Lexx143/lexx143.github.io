@@ -7,18 +7,18 @@
         body {
             margin: 20px;
             font-family: "Times New Roman", serif;
-            font-size: 13px;
+            font-size: 14px;          /* немного крупнее */
         }
 
         h2 {
             margin: 0 0 12px 0;
-            font-size: 20px;
+            font-size: 22px;          /* крупный заголовок */
             font-weight: bold;
         }
 
         h3 {
             margin: 16px 0 6px 0;
-            font-size: 15px;
+            font-size: 17px;
             font-weight: bold;
         }
 
@@ -34,14 +34,18 @@
 
         .label {
             padding-right: 10px;
-            font-weight: normal;
         }
 
-        /* серые прямоугольники только для нужных строк */
+        /* серые прямоугольники слева (Тема, Рег. дата, Статус) */
+        .label-gray {
+            background-color: #e5e5e5;
+        }
+
+        /* серые прямоугольники справа (значения этих строк) */
         .value-gray {
             background-color: #e5e5e5;
             padding: 2px 4px;
-            min-width: 420px;   /* визуальная ширина серой полосы как на референсе */
+            min-width: 420px;
             display: inline-block;
         }
 
@@ -64,7 +68,7 @@
 
     <table>
         <tr>
-            <td class="label">Тема</td>
+            <td class="label label-gray">Тема</td>
             <td>
                 <span class="value-gray">
                     Новое проектирование и строительство объектов газоснабжения
@@ -78,7 +82,7 @@
             </td>
         </tr>
         <tr>
-            <td class="label">Рег. дата</td>
+            <td class="label label-gray">Рег. дата</td>
             <td>
                 <span class="value-gray">
                     21.07.2025 15:13:00
@@ -87,12 +91,10 @@
         </tr>
         <tr>
             <td class="label">Вложения</td>
-            <td>
-                2
-            </td>
+            <td>2</td>
         </tr>
         <tr>
-            <td class="label">Статус</td>
+            <td class="label label-gray">Статус</td>
             <td>
                 <span class="value-gray">
                     Завершен
