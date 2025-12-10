@@ -3,118 +3,90 @@
 <head>
     <meta charset="utf-8">
     <title>Доступ к документам EasyDocs</title>
-    <style>
-        body {
-            margin: 20px;
-            font-family: "Times New Roman", serif;
-            font-size: 14px;          /* немного крупнее */
-        }
-
-        h2 {
-            margin: 0 0 12px 0;
-            font-size: 22px;          /* крупный заголовок */
-            font-weight: bold;
-        }
-
-        h3 {
-            margin: 16px 0 6px 0;
-            font-size: 17px;
-            font-weight: bold;
-        }
-
-        table {
-            border-collapse: collapse;
-            margin-bottom: 18px;
-        }
-
-        td {
-            padding: 2px 4px;
-            vertical-align: top;
-        }
-
-        .label {
-            padding-right: 10px;
-        }
-
-        /* серые прямоугольники слева (Тема, Рег. дата, Статус) */
-        .label-gray {
-            background-color: #e5e5e5;
-        }
-
-        /* серые прямоугольники справа (значения этих строк) */
-        .value-gray {
-            background-color: #e5e5e5;
-            padding: 2px 4px;
-            min-width: 420px;
-            display: inline-block;
-        }
-
-        .attention {
-            color: #b00000;
-        }
-
-        #linkList {
-            margin-top: 4px;
-        }
-
-        #linkList li {
-            margin: 1px 0;
-        }
-    </style>
 </head>
-<body>
+<body style="margin:20px; font-family:'Times New Roman', serif; font-size:15px;">
 
-    <h2>Данные документа</h2>
+    <h2 style="margin:0 0 12px 0; font-size:24px; font-weight:bold;">
+        Данные документа
+    </h2>
 
-    <table>
+    <table style="border-collapse:collapse; margin-bottom:18px;">
         <tr>
-            <td class="label label-gray">Тема</td>
-            <td>
-                <span class="value-gray">
+            <!-- ЛЕВАЯ ЯЧЕЙКА ТЕМА: серый фон -->
+            <td style="padding:2px 4px; vertical-align:top; padding-right:10px; background-color:#e5e5e5;">
+                Тема
+            </td>
+            <!-- ПРАВАЯ ЯЧЕЙКА ТЕМА: серый фон -->
+            <td style="padding:2px 4px; vertical-align:top;">
+                <span style="display:inline-block; min-width:420px; padding:2px 4px; background-color:#e5e5e5;">
                     Новое проектирование и строительство объектов газоснабжения
                 </span>
             </td>
         </tr>
+
         <tr>
-            <td class="label">Номер</td>
-            <td>
+            <td style="padding:2px 4px; vertical-align:top; padding-right:10px;">
+                Номер
+            </td>
+            <td style="padding:2px 4px; vertical-align:top;">
                 01-гор-2025-000001002
             </td>
         </tr>
+
         <tr>
-            <td class="label label-gray">Рег. дата</td>
-            <td>
-                <span class="value-gray">
+            <!-- ЛЕВАЯ ЯЧЕЙКА РЕГ. ДАТА: серый фон -->
+            <td style="padding:2px 4px; vertical-align:top; padding-right:10px; background-color:#e5e5e5;">
+                Рег. дата
+            </td>
+            <!-- ПРАВАЯ ЯЧЕЙКА РЕГ. ДАТА: серый фон -->
+            <td style="padding:2px 4px; vertical-align:top;">
+                <span style="display:inline-block; min-width:420px; padding:2px 4px; background-color:#e5e5e5;">
                     21.07.2025 15:13:00
                 </span>
             </td>
         </tr>
+
         <tr>
-            <td class="label">Вложения</td>
-            <td>2</td>
+            <td style="padding:2px 4px; vertical-align:top; padding-right:10px;">
+                Вложения
+            </td>
+            <td style="padding:2px 4px; vertical-align:top;">
+                2
+            </td>
         </tr>
+
         <tr>
-            <td class="label label-gray">Статус</td>
-            <td>
-                <span class="value-gray">
+            <!-- ЛЕВАЯ ЯЧЕЙКА СТАТУС: серый фон -->
+            <td style="padding:2px 4px; vertical-align:top; padding-right:10px; background-color:#e5e5e5;">
+                Статус
+            </td>
+            <!-- ПРАВАЯ ЯЧЕЙКА СТАТУС: серый фон -->
+            <td style="padding:2px 4px; vertical-align:top;">
+                <span style="display:inline-block; min-width:420px; padding:2px 4px; background-color:#e5e5e5;">
                     Завершен
                 </span>
             </td>
         </tr>
     </table>
 
-    <h3>Доступ к приложениям документа</h3>
+    <h3 style="margin:16px 0 6px 0; font-size:18px; font-weight:bold;">
+        Доступ к приложениям документа
+    </h3>
 
-    <h3>Доступные Вам файлы для документа</h3>
-    <span class="attention"><i>Внимание</i>:</span> ссылки доступны в течении 2 часов.
+    <h3 style="margin:16px 0 6px 0; font-size:18px; font-weight:bold;">
+        Доступные Вам файлы для документа
+    </h3>
 
-    <ul id="linkList">
-        <li>
+    <span style="color:#b00000;"><i>Внимание</i>:</span>
+    ссылки доступны в течении 2 часов.
+
+    <ul id="linkList" style="margin-top:4px;">
+        <li style="margin:1px 0;">
             <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf" download>
                 ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf
             </a>
         </li>
-        <li>
+        <li style="margin:1px 0;">
             <a href="ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms" download>
                 ТУ № 01-гор-2025-000001002 (ТОО «LUXOR.KZ COMPANY»)_qr_stamp.pdf.cms
             </a>
